@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+      docker: 20
+    commands:
+      - echo Instalando dependencias...
+
+  build:
+    commands:
+      - echo Compilando aplicación...
+      - docker build -t app-web-devops ./app_web
+
+artifacts:
+  files:
+    - '**/*'
+
