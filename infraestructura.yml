@@ -2,10 +2,11 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: Plantilla CloudFormation para EC2 y S3 - Proyecto DevOps
 
 Resources:
+
   MiSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupDescription: Permitir tráfico esencial
+      GroupDescription: Permitir trafico esencial
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 22
@@ -19,18 +20,19 @@ Resources:
   MiInstanciaEC2:
     Type: AWS::EC2::Instance
     Properties:
+      ImageId: ami-0fc5d935ebf8bc3bc
       InstanceType: t2.micro
-      ImageId: ami-0c02fb55956c7d316 
-      IamInstanceProfile: LabInstanceProfile
       SecurityGroupIds:
         - !Ref MiSecurityGroup
+      IamInstanceProfile: LabInstanceProfile
       Tags:
         - Key: Name
-          Value: InstanciaDevOps
+          Value: DevOpsInstance
 
   MiBucketS3:
     Type: AWS::S3::Bucket
     Properties:
+      BucketName: !Sub "proyecto-devops-${AWS::AccountId}-${AWS::Region}"
       VersioningConfiguration:
         Status: Enabled
 

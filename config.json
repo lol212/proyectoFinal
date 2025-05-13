@@ -1,0 +1,8 @@
+{
+  "name": "default",
+  "roleARN": "arn:aws:iam::218957849230:role/LabRole",
+  "recordingGroup": {
+    "allSupported": true
+  }
+}
+
