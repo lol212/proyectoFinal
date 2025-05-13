@@ -1,0 +1,22 @@
+Listado de instancias EC2:
+- ID: i-0fa7b966843f9bc6b, Estado: running, Tipo: t2.micro, Zona: us-east-1c
+- ID: i-0807d88b92b946324, Estado: running, Tipo: t2.micro, Zona: us-east-1c
+- ID: i-0a539e372868107c3, Estado: running, Tipo: t2.micro, Zona: us-east-1c
+- ID: i-03677feb081d68f80, Estado: running, Tipo: t2.micro, Zona: us-east-1a
+- ID: i-0b6054642369202a0, Estado: running, Tipo: t2.micro, Zona: us-east-1d
+
+Buckets en S3:
+- archivos-transporte-alejandro
+   - Prueba.txt
+- codepipeline-us-east-1-c40394186d97-4d29-a888-31ee306e183e
+- mi-bucket-devops-lol212
+   - index.html
+- respaldo-bucket-alex
+   - backup_2025-04-03.tar.gz
+
+Uso de CPU de instancias EC2 (última hora):
+- i-0fa7b966843f9bc6b: 2.37% CPU
+- i-0807d88b92b946324: 3.57% CPU
+- i-0a539e372868107c3: 3.52% CPU
+- i-03677feb081d68f80: 2.81% CPU
+- i-0b6054642369202a0: 2.56% CPU
